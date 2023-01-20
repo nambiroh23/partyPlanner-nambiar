@@ -18,3 +18,7 @@ Your program should:
   * print 'rosters' by table
   * print rosters by company
   * Add getter functionality to 'find' a person and report what table they are at
+
+I created an ArrayList of all guests, an array of Companies, each with a list of emplyees, and iterated through all of the people, using the iterator mod the table count to assign tables.
+
+I added fuinctionality to register guests as many times as desired (as long as we follow the given constraints), print the roster in different desirable formats, and easily search for guests using a portion of their name.
