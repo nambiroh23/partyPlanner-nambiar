@@ -13,7 +13,7 @@ public class Company {
   
   ArrayList<Person> employees;
 
-  /**
+  /*
     * constructor
   */
   public Company(String name) {

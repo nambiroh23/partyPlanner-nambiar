@@ -9,7 +9,7 @@ public class Person {
   int company;
   int index;
 
-  /**
+  /*
     * constructor to be used when populating
   */
   public Person(String last, String first, int company, int index) {
@@ -18,7 +18,7 @@ public class Person {
     this.index = index;
   }
 
-  /**
+  /*
     * constructor to be used when sorting into tables
   */
   public Person(Name name, int company, int index, int table) {
@@ -31,7 +31,7 @@ public class Person {
   // list of companies
   String[] d = {"Wal-Mart", "Kroger", "Amazon", "Lowes", "Best Western", "KMart", "Fusian", "Heinz", "Gucci", "Prada", "Nike", "Dodge", "Maseratti", "Razor", "AMD", "Razer"};
 
-  /**
+  /*
     * for printing purposes
   */
   public String toString() {

@@ -4,16 +4,16 @@
 */
 class Name {
 
-  /**
+  /*
     * last name
   */
   public String last;
-  /**
+  /*
     * first name
   */
   public String first;
 
-  /**
+  /*
     * constructor
   */
   public Name(String last, String first) {

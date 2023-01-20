@@ -6,6 +6,7 @@ import java.util.*;
   * party planner sorts guests from a list of companies such that no two guests from same company are at the same table
   * imports guest list from partyguests.txt
   * sorts with various functionalities to add people, check constraints on data, and read output from console
+  * within a table, there are no constraints on where guests sit, so seats within 
 */
 
 public class Party {
@@ -21,7 +22,7 @@ public class Party {
   
   // public ArrayList<Person>[] tables = new ArrayList<Person>[tableCount];
   
-  /**
+  /*
     * populates the list of people from partyguest.txt, puts them in their companies, as well, and checks constraints
   */
   public void populate() {
@@ -34,7 +35,7 @@ public class Party {
         // System.out.println(i);
         scan = new Scanner(s.nextLine());
         scan.useDelimiter(",");
-        int x = scan.nextInt();
+        int x = scan.nextInt(); // skip line
         people.add(new Person(scan.next(), scan.next(), scan.nextInt()-1, i));
         i++;
       }
@@ -96,7 +97,7 @@ public class Party {
     
   }
 
-  /**
+  /*
     * sorts into tables following the assignment requirements: no more than one person from each company at a table
   */
   public void sort() {
@@ -112,7 +113,7 @@ public class Party {
     }
   }
 
-  /**
+  /*
     * prints the whole list of guests
   */
   public void wholeRoster() {
@@ -120,7 +121,7 @@ public class Party {
     System.out.println(people);
   }
 
-  /**
+  /*
     * prints guests by table
   */
   public void tableRoster() {
@@ -135,7 +136,7 @@ public class Party {
     } // close outer for
   } // close method
 
-  /**
+  /*
     * prints guests by company
   */
   public void companyRoster() {
@@ -146,7 +147,7 @@ public class Party {
     }
   }
 
-  /**
+  /*
     * lets user add guests as long as they want so long as constraints are followed
   */
   public void register() {
@@ -172,12 +173,15 @@ public class Party {
             break;
           }
         }
-        System.out.println("Please enter a valid company name.");
+        if(!ok) {
+          System.out.println("Please enter a valid company name.");
+        }
       }
       Person n = new Person(l, f, c, people.size());
       if(people.size()<100) {
         if(companies[n.company].employees.size()<maxCompanySize) {
           people.add(n);
+          companies[n.company].employees.add(n);
         }
         else {
           System.out.println(companies[n.company].name + " has too many people; max " + maxCompanySize +  " guests per company.");
@@ -190,7 +194,7 @@ public class Party {
     } // close while
   } // close method
 
-  /**
+  /*
     * finds a person from a portion of their name inputted by the user
   */
   public void find() {
