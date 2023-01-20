@@ -22,3 +22,14 @@ Your program should:
 I created an ArrayList of all guests, an array of Companies, each with a list of emplyees, and iterated through all of the people, using the iterator mod the table count to assign tables.
 
 I added fuinctionality to register guests as many times as desired (as long as we follow the given constraints), print the roster in different desirable formats, and easily search for guests using a portion of their name.
+
+Photos of it running; start from the bottom because it won't let me change the order for some reason.
+
+<img width="749" alt="Screen Shot 2023-01-20 at 11 41 56 AM" src="https://user-images.githubusercontent.com/77296224/213754656-dbfec651-65f0-4ba0-a672-9b05e79270ff.png">
+<img width="787" alt="Screen Shot 2023-01-20 at 11 41 49 AM" src="https://user-images.githubusercontent.com/77296224/213754661-6583c9f6-8863-4eda-bd51-4622db13edd4.png">
+<img width="784" alt="Screen Shot 2023-01-20 at 11 41 41 AM" src="https://user-images.githubusercontent.com/77296224/213754663-105c6d91-1c76-4a4f-8cd4-e7f03e1311ef.png">
+<img width="724" alt="Screen Shot 2023-01-20 at 11 41 25 AM" src="https://user-images.githubusercontent.com/77296224/213754666-330683e0-79aa-4d5b-831f-4c05c8853a00.png">
+<img width="776" alt="Screen Shot 2023-01-20 at 11 41 17 AM" src="https://user-images.githubusercontent.com/77296224/213754667-8b4c5819-8567-4534-8eb2-f2b945ca5638.png">
+<img width="772" alt="Screen Shot 2023-01-20 at 11 41 06 AM" src="https://user-images.githubusercontent.com/77296224/213754669-bebfe745-4af3-4777-9357-48ddd2cba3b2.png">
+<img width="782" alt="Screen Shot 2023-01-20 at 11 40 50 AM" src="https://user-images.githubusercontent.com/77296224/213754672-d827489c-fd64-4b51-b582-2cd32498a7b2.png">
+<img width="786" alt="Screen Shot 2023-01-20 at 11 40 34 AM" src="https://user-images.githubusercontent.com/77296224/213754676-545de508-4da0-4341-b65c-eaa624824b96.png">
